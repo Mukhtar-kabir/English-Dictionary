@@ -8,6 +8,7 @@ const titleEl = document.querySelector('#title');
 const meaningEl = document.querySelector('#meaning');
 const audioEl = document.querySelector('#audio');
 const phoneticEl = document.querySelector('#phonetic');
+const phoneticEl2 = document.querySelector('.parags');
 
 const fetchWord = async function (word) {
   try {
@@ -25,13 +26,18 @@ const fetchWord = async function (word) {
       meaningContainer.style.display = 'block';
       titleEl.textContent = word;
       meaningEl.textContent = 'Not available! 😶';
+      phoneticEl2.style.display = 'none';
       audioEl.style.display = 'none';
     } else {
       meaningContainer.style.display = 'block';
       audioEl.style.display = 'block';
+      phoneticEl2.style.display = 'block';
       titleEl.textContent = result[0].word;
       meaningEl.textContent = result[0].meanings[0].definitions[0].definition;
       audioEl.src = result[0].phonetics[0].audio;
+      result[0].hasOwnProperty('phonetic')
+        ? (phoneticEl.textContent = result[0].phonetic)
+        : '';
     }
 
     console.log(result);
