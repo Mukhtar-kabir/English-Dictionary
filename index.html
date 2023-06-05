@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Dictionary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">English Dictionary</h1>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search a word"
+          class="input"
+          id="input"
+        />
+        <button class="btn" id="btn">Search</button>
+      </div>
+      <p class="info-text" id="info-text">Type a word and press enter</p>
+      <div class="meaning-container" id="meaning-container">
+        <p>Word Title: <span class="title" id="title">Job</span></p>
+        <p>Meaning: <span class="meaning" id="meaning">Job</span></p>
+        <!-- <p>Phonetic:  <span class="phonetic" id="phonetic">"/nerm/"</span></p> -->
+        <audio src="" controls id="audio"></audio>
+      </div>
+    </div>
+  </body>
+</html>
