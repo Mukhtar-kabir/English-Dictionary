@@ -48,6 +48,7 @@ const fetchWord = async function (word) {
 };
 
 btn.addEventListener('click', function () {
+  if (!inputEl.value) return
   console.log(inputEl.value);
   const result = document.querySelector('#input').value;
   fetchWord(result);

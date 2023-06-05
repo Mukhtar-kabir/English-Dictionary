@@ -36,12 +36,15 @@ body {
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #fff;
 }
 
-.container .search .btn {
-   border: 1px solid #777;
+.container .search i{
    cursor: pointer;
+   padding: 10px;
+   border-radius: 50px;
+   background: #ecf0f3;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #fff;
 }
 
-.container .search .btn:hover {
+.container .search i:hover {
   opacity: .70;
 }
 
