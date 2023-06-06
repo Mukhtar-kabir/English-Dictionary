@@ -33,6 +33,10 @@ body {
 
 .container .search {
   background: #ecf0f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #fff;
 }
 

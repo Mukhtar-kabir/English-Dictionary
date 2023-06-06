@@ -27,7 +27,7 @@ const fetchWord = async function (word) {
       titleEl.textContent = word;
       meaningEl.textContent = 'Not available! 😶';
       phoneticEl2.style.display = 'none';
-      audioEl.style.display = 'none';
+      audioEl.style.display = 'inline-flex';
     } else {
       meaningContainer.style.display = 'block';
       audioEl.style.display = 'block';
