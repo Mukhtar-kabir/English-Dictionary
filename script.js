@@ -27,10 +27,10 @@ const fetchWord = async function (word) {
       titleEl.textContent = word;
       meaningEl.textContent = 'Not available! 😶';
       phoneticEl2.style.display = 'none';
-      audioEl.style.display = 'inline-flex';
+      audioEl.style.display = 'none';
     } else {
       meaningContainer.style.display = 'block';
-      audioEl.style.display = 'block';
+      audioEl.style.display = 'inline-flex';
       phoneticEl2.style.display = 'block';
       titleEl.textContent = result[0].word;
       meaningEl.textContent = result[0].meanings[0].definitions[0].definition;
@@ -48,7 +48,7 @@ const fetchWord = async function (word) {
 };
 
 btn.addEventListener('click', function () {
-  if (!inputEl.value) return
+  if (!inputEl.value) return;
   console.log(inputEl.value);
   const result = document.querySelector('#input').value;
   fetchWord(result);
